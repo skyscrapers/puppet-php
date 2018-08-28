@@ -27,7 +27,8 @@ class php::repo::ubuntu (
     '5.5' => 'ondrej/php',
     '5.6' => 'ondrej/php',
     '7.0' => 'ondrej/php',
-    '7.1' => 'ondrej/php'
+    '7.1' => 'ondrej/php',
+    '7.2' => 'ondrej/php'
   }
 
   if ($version != undef and $ppa != undef) {
