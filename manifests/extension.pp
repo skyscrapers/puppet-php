@@ -214,7 +214,7 @@ define php::extension(
     file_line { "Set_prio ${lowercase_title}":
       path              => "${config_root_ini}/${lowercase_title}.ini",
       line              => "; priority=${priority}",
-      require           => :Php::Config[$title],
+      require           => ::Php::Config[$title],
       match             => '^; priority\=',
       match_for_absence => true,
       multiple          => false,
